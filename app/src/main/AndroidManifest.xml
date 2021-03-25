@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fdms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICEs" />
+
+    <application
+        android:name=".global"
+        android:allowBackup="true"
+        android:icon="@drawable/familydb"
+        android:label="FDMS"
+        tools:replace="android:label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login"/>
+        <activity android:name=".doc_view" />
+        <activity android:name=".Horoscope" />
+        <activity android:name=".document_update" />
+        <activity android:name=".achieve_update" />
+        <activity android:name=".assets_update" />
+        <activity android:name=".finance_update" />
+        <activity android:name=".open">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".grid" />
+        <activity android:name=".balance" />
+        <activity android:name=".academic_update" />
+        <activity android:name=".pdf" />
+        <activity android:name=".register" />
+        <activity android:name=".add_user" />
+        <activity android:name=".basic_update" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@drawable/textbox" />
+
+        <activity android:name=".achieve_delete" />
+        <activity android:name=".assets_delete" />
+        <activity android:name=".finance_delete" />
+        <activity android:name=".document_delete" />
+        <activity android:name=".academic_delete" />
+        <activity android:name=".basic_delete" />
+        <activity android:name=".assets" />
+        <activity android:name=".achieve" />
+        <activity android:name=".finance" />
+        <activity android:name=".document" />
+        <activity android:name=".academic" />
+        <activity android:name=".basic" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
